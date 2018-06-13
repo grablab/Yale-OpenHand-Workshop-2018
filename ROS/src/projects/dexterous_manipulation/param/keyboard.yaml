@@ -1,0 +1,10 @@
+keyboard_control: {
+  gain: 0.2
+}
+gripper: {
+  type: "t42"
+}
+
+stability: {
+  action_type: 0
+}

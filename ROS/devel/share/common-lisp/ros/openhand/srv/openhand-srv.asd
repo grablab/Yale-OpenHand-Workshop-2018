@@ -1,0 +1,21 @@
+
+(cl:in-package :asdf)
+
+(defsystem "openhand-srv"
+  :depends-on (:roslisp-msg-protocol :roslisp-utils )
+  :components ((:file "_package")
+    (:file "HoldServos" :depends-on ("_package_HoldServos"))
+    (:file "_package_HoldServos" :depends-on ("_package"))
+    (:file "MoveServos" :depends-on ("_package_MoveServos"))
+    (:file "_package_MoveServos" :depends-on ("_package"))
+    (:file "ReadCurrent" :depends-on ("_package_ReadCurrent"))
+    (:file "_package_ReadCurrent" :depends-on ("_package"))
+    (:file "ReadLoad" :depends-on ("_package_ReadLoad"))
+    (:file "_package_ReadLoad" :depends-on ("_package"))
+    (:file "ReadServos" :depends-on ("_package_ReadServos"))
+    (:file "_package_ReadServos" :depends-on ("_package"))
+    (:file "ReadTemperature" :depends-on ("_package_ReadTemperature"))
+    (:file "_package_ReadTemperature" :depends-on ("_package"))
+    (:file "TorqueServos" :depends-on ("_package_TorqueServos"))
+    (:file "_package_TorqueServos" :depends-on ("_package"))
+  ))

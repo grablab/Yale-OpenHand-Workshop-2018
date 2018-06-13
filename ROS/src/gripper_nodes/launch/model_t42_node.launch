@@ -1,0 +1,3 @@
+<launch>
+	<node name="gripper_t42" pkg="gripper_nodes" type="gripper_node" output="screen"/>
+</launch>

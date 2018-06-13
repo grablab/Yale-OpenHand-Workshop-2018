@@ -1,0 +1,10 @@
+(cl:defpackage gripper_nodes-srv
+  (:use )
+  (:export
+   "COMMANDTRAJECTORY"
+   "<COMMANDTRAJECTORY-REQUEST>"
+   "COMMANDTRAJECTORY-REQUEST"
+   "<COMMANDTRAJECTORY-RESPONSE>"
+   "COMMANDTRAJECTORY-RESPONSE"
+  ))
+

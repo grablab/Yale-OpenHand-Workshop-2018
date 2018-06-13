@@ -1,0 +1,14 @@
+<launch>
+
+  <rosparam command="load" file="$(find dexterous_manipulation)/param/keyboard.yaml" />
+  <rosparam command="load" file="$(find dexterous_manipulation)/param/gripper.yaml" />
+
+  <include file="$(find dexterous_manipulation)/launch/model_t42.launch"/>
+  <include file="$(find gripper_nodes)/launch/model_t42_node.launch"/>
+
+  <node name="dexterous_manipulation" pkg="dexterous_manipulation" type="keyboard" output="screen"/> 
+  <node name="keyboard_input" pkg="keyboard_input" type="keyboard_input" output="screen"/> 
+  <node name="keyboard_control" pkg="keyboard_control" type="keyboard_control" output="screen"/> 
+
+</launch>
+
