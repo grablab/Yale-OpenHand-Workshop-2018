@@ -36,11 +36,12 @@ Please note that an additional [driver](http://www.ftdichip.com/Drivers/D2XX.htm
 
 Record the port name presented in the terminal window. You will now also need to know the address of each Dynamixel you intend to control. Addresses can be changed using the [Dynamixel Wizard](http://www.robotis.us/roboplus1/), in Windows or by using the command line tool presented later on. For the Model O case, we should expect to see 4 unique addresses when looking for the motor addresses. To find the addresses of your dynamixels, run the following command in a terminal window:
  
-Basic (write python3 if not using Python 2, depending on system configuration):  
-`$ python lib_robotis_mod.py -d <YOUR_COM_PORT> --scan`
+Basic (write python3 if not using Python 2, depending on your system configuration, and you may also need to use the ```sudo``` command before ```python``` or ```python3```):  
+`$ python lib_robotis_mod.py -d <YOUR_COM_PORT> --scan`  __OR__  
+`$ sudo python lib_robotis_mod.py -d <YOUR_COM_PORT> --scan` 
 
 Example:  
-`$ python lib_robotis_mod.py -d '/dev/ttyUSB0' --scan`
+`$ python lib_robotis_mod.py -d '/dev/ttyUSB0' --scan`  
 `$ python lib_robotis_mod.py -d 'COM9' --scan`
 
 NOTE: This process can often be difficult to cancel out of in Windows (use ```ctrl + \``` in unix-based systems). Once dynamixels are found, you may close out of and restart the terminal without any changes to the configuration. If you have multiple dynamixels (daisy chain) connected and you are missing an ID for one or more motors, it is likely that there are motors in your system that share the same (address) ID. In this event, you will have to change the ID of matching motors so that they are unique in your system. While connecting just one motor to the serial module, you can run the following command:
