@@ -1,6 +1,9 @@
 # Yale OpenHand Workshop 2018
 
-Welcome to the Yale Grab Lab OpenHand Workshop 2018. Throughout the course of this workshop, we will be assembling and controlling a Model O gripper from the Yale OpenHand Project. All 3D files are openly available on the [OpenHand Hardware Github](https://github.com/grablab/openhand-hardware). The code provided for this workshop is extended from that of the [OpenHand Software Github](https://github.com/grablab/openhand-software) to include support for Python 3 and ROS control. Other models are available on the [OpenHand Website](http://www.eng.yale.edu/grablab/openhand/) with instruction manuals for fabrication and assembly. The python code provided in this workshop will allow you to control an array of hands that are available on the website, though we will be focusing mainly on the Model O. 
+***Please note that the code for the Yale Openhand models is constantly being updated. This workshop repository will remain static. For updated code, that may admittedly have less documentation, please refer to our current software repository, [OpenHand Software Github](https://github.com/grablab/openhand_node).***
+
+
+Welcome to the Yale Grab Lab OpenHand Workshop 2018. Throughout the course of this workshop, we will be assembling and controlling a Model O gripper from the Yale OpenHand Project. All 3D files are openly available on the [OpenHand Hardware Github](https://github.com/grablab/openhand-hardware). The code provided for this workshop is extended from that of the [OpenHand Software Github](https://github.com/grablab/openhand_node) to include support for Python 3 and ROS control. Other models are available on the [OpenHand Website](http://www.eng.yale.edu/grablab/openhand/) with instruction manuals for fabrication and assembly. The python code provided in this workshop will allow you to control an array of hands that are available on the website, though we will be focusing mainly on the Model O. 
 
 More information about the lab and present/previous work is available on the [Grab Lab Website](https://www.eng.yale.edu/grablab/).
 
